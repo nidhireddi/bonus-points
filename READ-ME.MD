@@ -1,6 +1,9 @@
 # Checkout from git:
     git clone https://github.com/nidhireddi/reward-points.git
     cd reward-points
+    
+# Build Project in local
+    mvn clean install
 
 # Testing:
     mvn test

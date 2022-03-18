@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "1d927340-9b21-4d11-98eb-0c697e52476b",
+		"name": "Rewards-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/retailer/getAllTransactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"getAllTransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer All Transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/retailer/customer-id/104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"customer-id",
+						"104"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rewards Points By Amount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "500",
+							"type": "default"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/retailer/get-reward-points",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"get-reward-points"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rewards Points By Customer Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "default",
+							"disabled": true
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/retailer/get-reward-points-by-customer-id/104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"get-reward-points-by-customer-id",
+						"104"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Transaction By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/retailer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"txnId\": 101,\r\n    \"amount\": 100.0,\r\n    \"createdOn\": \"2022-03-18T19:57:16.720+00:00\",\r\n    \"initiatedBy\": {\r\n        \"id\": 100,\r\n        \"firstName\": \"fname1\",\r\n        \"lastName\": \"lname1\",\r\n        \"age\": 23,\r\n        \"address\": \"address1\",\r\n        \"rewardPoints\": 500\r\n    },\r\n    \"refId\": \"refid\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/retailer/saveTransaction",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"retailer",
+						"saveTransaction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

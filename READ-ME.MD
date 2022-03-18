@@ -1,5 +1,5 @@
 # Checkout from git:
-    git clone <url>
+    git clone https://github.com/nidhireddi/reward-points.git
     cd reward-points
 
 # Testing:

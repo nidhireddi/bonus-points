@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.retailer.reward-points' is invalid and this project uses 'com.retailer.rewardpoints' instead.
+* The original package name 'com.retailer.bonus-points' is invalid and this project uses 'com.retailer.bonuspoints' instead.
 
 # Getting Started
 
